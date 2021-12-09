@@ -6584,19 +6584,19 @@ if (budy.includes("eror",'error','Eror','Error')){
 fs.writeFileSync('./database/user/register.json', JSON.stringify(register))
 teks = `╭─❒ *Verification* ❒\n│📛 *Nama :* ${pushname}\n│#️⃣ *Nomor :* @${sender.split('@')[0]}\n│💌 *Bio :* ${bio_user}\n│⏰ *Time :* ${wib} Wib\n╰❒ *Success*`
 let papako = [{
-										"buttonId": `.menu`,
+										"buttonId": `menu`,
 										"buttonText": {
 											"displayText": "MENU"
 											},
 										"type": "RESPONSE"
 										},{
-										"buttonId": `.me`,
+										"buttonId": `me`,
 										"buttonText": {
 											"displayText": "PROCFILE"
 											},
 										"type": "RESPONSE"
 										}]
-								sendButLocation(from, teks , `Thank for verification 💋\n${botname}™© | By ${ownername}`,pp_userz, papako, {contextInfo: { mentionedJid: [sender]}})
+								sendButLocation(from, teks , `Thank for verification 💋\n${botname}™© | By ${ownername}`,pp_userz, papako, {})
                 }
 		
 if (budy.startsWith('x')){

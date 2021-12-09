@@ -2232,26 +2232,52 @@ let p1 = await alpha.getStatus(sender)
 anunya = process.uptime()
 ini_anu =`${ucapannya2}
 
-╭─❒ 「 Bot Info 」 ❒
-├ Creator :  @${koko.split('@')[0]}
-├ Powered  : @${ini_mark.split('@')[0]}
-├ Prefix :   ${prefix}
-├ Total hit : ${hitall}
-├ Hit today : ${hit_today.length}
-├ Speed : ${latensii.toFixed(4)} Second
-├ Runtime : ${kyun(anunya)}
-├ Battery : ${isBattre}
-╰❒ Charging : ${isCharge}
+*╭─❏ _•❗「 BotBang 」_*
+*│• Creator :  @${koko.split('@')[0]}
+*│• Powered  : @${ini_mark.split('@')[0]}
+*│• Prefix :   ${prefix}
+*│• Speed : ${latensii.toFixed(4)} Second
+*│• Runtime : ${kyun(anunya)}
+*╰────❏*
 
-╭─❒ 「 User Info 」 ❒
-├ Name : ${pushname}
-├ Bio : ${p1 ? `${p1.status}` : '-'}
-├ Nomor : @${sender.split('@')[0]}
-├ Me : ${mek.key.fromMe ? 'True' : 'False'}
-╰❒ Owner : ${isOwner ? 'True' : `False`}
+*╭─❏ _•❗「 User Info 」_*
+*│➤ Name : ${pushname}*
+*│➤ Nomor : @${sender.split('@')[0]}*
+*│➤ Limit : ${isPremium ? 'Unlimited Premium' : `${getLimit(sender, limitawal, limit)} / ${limitawal}`}*
+*│➤ Owner : ${isOwner ? 'True' : `False`}*
+
+*╰─────────❏*
 `
 if(menusimple == false){
-sendButDoc(from, ini_anu, `_Please Don't spam bot, pause 3 seconds per command._\n_Thanks!_`, sender, koko, ini_mark)
+let content3 = fs.readFileSync(`image/${thumbnail}`)
+const media3 = await alpha.prepareMessage(from, content1, MessageType.location, {thumbnail: content3})
+let bacotlu3 = media3.message["ephemeralMessage"] ? media3.message.ephemeralMessage : media3
+
+const buttons3 = [
+  {buttonId: 'ownerku', buttonText: {displayText: '⋮☰ OWNER'}, type: 1},
+  {buttonId: 'statiktiknya', buttonText:{displayText: '✓ STATISTIC'}, type: 1},
+  {buttonId: 'Command', buttonText: {displayText: '❍ LIST MESSAGE'}, type: 1}
+]
+
+const btn3 = {
+    contentText: ini_anu,
+    footerText: `${tampilTanggal}${enter}${tampilWaktu}${enter}${enter}BY @${koko.split('@')[0]} | BotBang`,
+    buttons: buttons3,
+    headerType: 6,
+    locationMessage: bacotlu3.message.locationMessage
+}
+
+alpha.sendMessage(from,  btn3, MessageType.buttonsMessage,{
+        caption: 'Botwea ©2k21',
+        "contextInfo": {
+            text: 'hi',
+            "forwardingScore": 1000000000,
+            isForwarded: true,
+            sendEphemeral: true,
+            "mentionedJid" : [sender,koko,ini_mark],
+            },
+			quoted: fkontak,sendEphemeral: true 
+			})
 } else if(menusimple = true){ 
 let content1 = fs.readFileSync(`image/${thumbnail}`)
 const media1 = await alpha.prepareMessage(from, content1, MessageType.location, {thumbnail: content1})

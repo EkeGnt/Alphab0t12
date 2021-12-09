@@ -183,8 +183,8 @@ let autobio = setting.autobio
 let antihidetag = setting.antihidetag
 
 banChats = setting.self_mode
-autorespon = false
-offline = false
+autorespon = true
+offline = true
 readGc = false 
 readPc = false 
 antitrol = false 
@@ -2254,9 +2254,9 @@ const media3 = await alpha.prepareMessage(from, content1, MessageType.location, 
 let bacotlu3 = media3.message["ephemeralMessage"] ? media3.message.ephemeralMessage : media3
 
 const buttons3 = [
-  {buttonId: 'ownerku', buttonText: {displayText: '⋮☰ OWNER'}, type: 1},
-  {buttonId: 'statiktiknya', buttonText:{displayText: '✓ STATISTIC'}, type: 1},
-  {buttonId: 'Command', buttonText: {displayText: '❍ LIST MESSAGE'}, type: 1}
+  {buttonId: 'Command', buttonText: {displayText: '⋮☰ List Menu'}, type: 1},
+  {buttonId: 'owner', buttonText:{displayText: '✓ Owner'}, type: 1},
+  {buttonId: 'infobot', buttonText: {displayText: '❍ Informasi'}, type: 1}
 ]
 
 const btn3 = {
@@ -3030,8 +3030,8 @@ case 'bcgif':
 					for (let i of ini_ownerNumber) {
 					const vname = alpha.contacts[i] != undefined ? alpha.contacts[i].vname || alpha.contacts[i].notify : undefined
 					ini_list.push({
-					"displayName": 'Owner Alphabot',
-					"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${alpha.user.name}`}\nORG: SUBSCRIBE ZEEONE OFC;\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+					"displayName": 'Owner BotBang',
+					"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${alpha.user.name}`}\nORG: INI FATUR BANG;\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 					})
 					}
 					hehe = await alpha.sendMessage(from, {
@@ -3040,8 +3040,8 @@ case 'bcgif':
 					}, 'contactsArrayMessage', { quoted: fkontak})
 					var ini_gopayy =`Halo @${sender.split("@")[0]} itu owner ku, jangan lupa donasi kak😇`
 var buttonss = [
-{buttonId: 'donasi', buttonText:{displayText: 'Donasi'}, type: 1},
-{buttonId: 'sewabot', buttonText:{displayText: 'Sewa'}, type: 1}
+{buttonId: 'menu', buttonText:{displayText: '❏Menu'}, type: 1},
+{buttonId: 'donasi', buttonText:{displayText: '•Donasi'}, type: 1}
 ]
 
 buttonMessagee = {
@@ -6276,8 +6276,8 @@ if (subscribezeeoneofc == "ownerku"){
 					for (let i of ini_ownerNumber) {
 					const vname_ = alpha.contacts[i] != undefined ? alpha.contacts[i].vname || alpha.contacts[i].notify : undefined
 					ini_list.push({
-					"displayName": 'Owner Alphabot',
-					"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname_ ? `${vname_}` : `${alpha.user.name}`}\nORG: SUBSCRIBE ZEEONE OFC;\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+					"displayName": 'Owner BotBang',
+					"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname_ ? `${vname_}` : `${alpha.user.name}`}\nORG: Ini Owner Bang;\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 					})
 					}
 					hehe = await alpha.sendMessage(from, {
@@ -6287,7 +6287,7 @@ if (subscribezeeoneofc == "ownerku"){
 					var ini_gopayy =`Halo @${sender.split("@")[0]} itu owner ku, jangan lupa donasi kak😇`
 var buttonss = [
 {buttonId: 'menu', buttonText:{displayText: '❏Menu'}, type: 1},
-{buttonId: 'sewa_kak', buttonText:{displayText: '•Sewa'}, type: 1}
+{buttonId: 'donasi', buttonText:{displayText: '•Donasi'}, type: 1}
 ]
 
 buttonMessagee = {

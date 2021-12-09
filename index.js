@@ -2235,7 +2235,7 @@ ini_anu =`${ucapannya2}
 *╭─❏ _•❗「 BotBang 」_*
 *│• Creator :  @${koko.split('@')[0]}*
 *│• Powered  : @${ini_mark.split('@')[0]}*
-*│• Prefix :   ${prefix}*
+*│• Prefix :   [ ${prefix} ]*
 *│• Speed : ${latensii.toFixed(4)} Second*
 *│• Runtime : ${kyun(anunya)}*
 *╰────❏*

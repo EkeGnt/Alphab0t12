@@ -2233,11 +2233,11 @@ anunya = process.uptime()
 ini_anu =`${ucapannya2}
 
 *╭─❏ _•❗「 BotBang 」_*
-*│• Creator :  @${koko.split('@')[0]}
-*│• Powered  : @${ini_mark.split('@')[0]}
-*│• Prefix :   ${prefix}
-*│• Speed : ${latensii.toFixed(4)} Second
-*│• Runtime : ${kyun(anunya)}
+*│• Creator :  @${koko.split('@')[0]}*
+*│• Powered  : @${ini_mark.split('@')[0]}*
+*│• Prefix :   ${prefix}*
+*│• Speed : ${latensii.toFixed(4)} Second*
+*│• Runtime : ${kyun(anunya)}*
 *╰────❏*
 
 *╭─❏ _•❗「 User Info 」_*
@@ -2245,7 +2245,6 @@ ini_anu =`${ucapannya2}
 *│➤ Nomor : @${sender.split('@')[0]}*
 *│➤ Limit : ${isPremium ? 'Unlimited Premium' : `${getLimit(sender, limitawal, limit)} / ${limitawal}`}*
 *│➤ Owner : ${isOwner ? 'True' : `False`}*
-
 *╰─────────❏*
 `
 if(menusimple == false){

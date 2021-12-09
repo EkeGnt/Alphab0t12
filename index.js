@@ -184,7 +184,7 @@ let antihidetag = setting.antihidetag
 
 banChats = setting.self_mode
 autorespon = true
-offline = true
+offline = false
 readGc = false 
 readPc = false 
 antitrol = false 
@@ -2250,7 +2250,7 @@ ini_anu =`${ucapannya2}
 `
 if(menusimple == false){
 let content3 = fs.readFileSync(`image/${thumbnail}`)
-const media3 = await alpha.prepareMessage(from, content1, MessageType.location, {thumbnail: content3})
+const media3 = await alpha.prepareMessage(from, content3, MessageType.location, {thumbnail: content3})
 let bacotlu3 = media3.message["ephemeralMessage"] ? media3.message.ephemeralMessage : media3
 
 const buttons3 = [

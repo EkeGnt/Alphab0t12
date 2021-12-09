@@ -1,10 +1,6 @@
 const jadibut = () =>{
 return`╭──「 📖  *PRICE JADIBOT*」
 │
-├ • *Test Jadibot [30-60m]*
-│
-│ ⤷ *Free* 💌
-│
 ├ • *Permanen*
 │
 │ ⤷ *Harga :  25k [E-Wallet]*
@@ -13,8 +9,6 @@ return`╭──「 📖  *PRICE JADIBOT*」
 ├─ 「 💰  *PAYMENT* 」
 │
 │ ⤷ *Dana [Diutamakan]*
-│ ⤷ *Ovo*
-│ ⤷ *Gopay*
 │ ⤷ *Pulsa Telkom*
 │
 ├─ 「 👨‍💻  *RUN ON* 」
@@ -25,7 +19,7 @@ return`╭──「 📖  *PRICE JADIBOT*」
 ├─ 「 📝  *NOTES* 」
 │
 │ ⤷ _Tidak perlu termux_
-│ ⤷ _Minat? Hubungi 0887435047326_
+│ ⤷ _Minat? Hubungi 6285240389682_
 │
 ╰──「 *Thank's* 」
 `

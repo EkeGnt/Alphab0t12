@@ -24,7 +24,7 @@ return `ℒ⃝👾 *B O T  S T A T I S T I C*
 📮 Versi Hp : ${device_model}
 
 
-ℒ⃝👨‍💻 *C O N N E C T  W I T H  M E*
+ℒ⃝👨‍💻 *C O N N E C T  C R E A T O R*
 
 ⛎ Api : api-alphabot.herokuapp.com
 ♈ YouTube : youtube.com/c/zeeoneofc
